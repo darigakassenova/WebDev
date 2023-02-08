@@ -1,0 +1,120 @@
+body{
+    font-family: Arial, sans-serif;
+}
+.main{
+    background-color: rgb(236, 239, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+.main #comp{
+    margin-top: 390px;
+    margin-left: -370px;
+    font-size: 14px;
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main #comp:hover{
+    text-decoration: underline;
+}
+.main #comp1{
+    margin-top: 422px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.logo{
+    width: 500px;
+}
+.logo img{
+    width: 240px;
+    margin-bottom: -15px;
+}
+.logo p{
+    font-size: 25px;
+    font-weight: 100;
+}
+.login{
+    width: 350px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(255,255,255);
+    margin-left: 70px;
+    box-shadow: 0px 0px 20px 0px rgb(180, 180, 180);
+}
+.login input{
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid rgb(235, 234, 234);
+    border-radius: 5px;
+}
+.login #log_in{
+    width: 100%;
+    margin-bottom: 10px;
+    color: rgb(255,255,255);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(21, 127, 233);
+}
+.login #log_in:hover{
+    background-color: rgb(20, 120, 220);
+}
+.login a{
+    color: rgb(19, 123, 227);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+.login a:hover{
+    text-decoration: underline;
+}
+.login hr{
+    border: 0.9px solid rgb(223, 221, 221);
+    margin-bottom: 15px;
+}
+.login #create{
+    width: 70%;
+    color: rgb(255,255,255);
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 5px;
+    background: #3fc425;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border: none;
+}
+.login #create:hover{
+    background-color: #2eac14;
+}
+.txt{
+    margin-left: 240px;
+    margin-top: 20px;
+    color:rgb(160, 158, 158);
+}
+.txt #choose{
+    margin: 0;
+    padding: 2px;
+}
+.txt .lan{
+    font-size: 13px;
+    display: inline;
+}
+.txt .lan:hover{
+    color: rgb(116, 116, 116);
+    text-decoration: underline;
+}
+.txt hr{
+    border: 0.9px solid rgb(210, 208, 208);
+    margin-right: 220px;
+}
+.txt #meta{
+    font-size: 10px;
+}
