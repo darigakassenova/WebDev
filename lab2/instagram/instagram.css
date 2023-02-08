@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(252, 251, 251);
+}
+.main{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.main #get{
+    margin-top: 530px;
+    margin-left: -200px;
+    font-size: 14px;
+}
+.main #img_logo{
+    margin-top: 560px;
+    margin-left: -173px;
+}
+.main #img_logo1{
+    margin-top: 560px;
+    margin-left: 10px;
+}
+.img_{
+    width: 630px;
+    margin-top: auto;
+}
+.login{
+    margin-top: 40px;
+    width: 290px;
+    height: 360px;
+    border: 1px solid rgb(208, 208, 208);
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255,255,255);
+    margin-left: 70px;
+}
+.login input{
+    width: 85%;
+    margin-bottom: 8px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid rgb(227, 226, 226);
+    border-radius: 1px;
+    background-color: rgb(252, 251, 251);
+}
+.login #link{
+    font-size: 14px;
+    color:rgb(59, 89, 152);
+    font-weight: bold;
+    text-decoration: none;
+}
+.login #forgot{
+    font-size: 12.5px;
+    text-decoration: none;
+    color:rgb(53, 81, 140);
+}
+.login #log_in{
+    width: 92%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: rgb(255,255,255);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    background-color: rgb(105, 171, 237);
+}
+.login p{
+    font-size: 12px;
+    color:rgb(160, 159, 159);
+    font-weight: bold;
+}
+.create{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 450px;
+    margin-left: -332px;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(210, 209, 209);
+    /* padding: 20px; */
+    font-size: 14px;
+    height: 60px;
+    width: 330px;
+}
+.create a{
+    color:rgb(52, 144, 237);
+    font-weight: bold;
+    text-decoration: none;
+}
+.txt{
+    margin-left: 240px;
+    margin-top: 20px;
+    color:rgb(160, 158, 158);
+    font-size: 12.5px;
+}
+.txt .set{
+    /* position: absolute; */
+    padding: 5px;
+    display: inline;
+}
+.txt .set:hover{
+    color: rgb(116, 116, 116);
+    text-decoration: underline;
+}
+.txt p{
+    margin-left: 330px;
+    margin-top: 20px;
+}
