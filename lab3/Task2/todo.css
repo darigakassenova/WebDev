@@ -30,7 +30,7 @@ body{
     color: rgb(17, 48, 55);
 }
 .heading #today span{
-    color: rgb(233, 233, 233);
+    color: rgb(255, 255, 255);
 }
 .heading #txt{
     position: relative;
@@ -46,15 +46,20 @@ body{
 .newTask input{
     position: relative;
     top: 120px;
-    right: 220px;
+    right: 208px;
     padding: 5px;
     font-size: 23px;
-    width: 400px;
+    width: 410px;
+    border: none;
     border-radius: 5px;
     color: rgb(33, 90, 103);
-    background-color: rgb(233, 233, 233);
-    border: 1px solid rgb(233, 233, 233);
+    background: white;
     box-shadow: 0px 0px 20px 0px rgb(16, 47, 53);
+}
+.newTask input:focus{
+    outline-color: #e8e8e8;
+    background: white;
+    box-shadow: 0px 0px 20px 0px #a9a8a8;
 }
 .newTask button{
     position: relative;
@@ -65,11 +70,26 @@ body{
     width: 70px;
     border-radius: 5px;
     color: rgb(33, 90, 103);
-    background-color: rgb(233, 233, 233);
-    border: 1px solid rgb(233, 233, 233);
+    border: none;
+    background: white;
     box-shadow: 0px 0px 20px 0px rgb(16, 47, 53);
 }
 .newTask button:hover{
-    background-color: rgb(203, 202, 202);
-    border: 1px solid rgb(203, 202, 202);
+    color: white;
+    background-color:rgb(33, 90, 103);
+    box-shadow: 0px 0px 20px 0px #a9a8a8;
 }
+.card {
+    position: relative;
+    float: right;
+    top: 140px;
+    right: 200px;
+    width: 502px;
+    height: 454px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 0px rgb(16, 47, 53);
+   }
+   
+   
+   
