@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(38, 102, 116);
+}
+
+.heading{
+    font-family: "Gill Sans", sans-serif;
+}
+.heading #h1{
+    position: relative;
+    float: left;
+    top: 380px;
+    left: 220px;
+    padding: 5px;
+    background-color: rgb(36, 97, 111);
+    color :rgb(12, 49, 58);
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    /* margin-left: 200px; */
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 0px rgb(16, 47, 53);
+    font-size: 20px;
+}
+.heading #today{
+    position: relative;
+    float: left;
+    top: 145px;
+    left: 45px;
+    font-size: 130px;
+    color: rgb(17, 48, 55);
+}
+.heading #today span{
+    color: rgb(233, 233, 233);
+}
+.heading #txt{
+    position: relative;
+    float: left;
+    top: 335px;
+    left: -320px;
+    font-size: 23px;
+    color: rgb(25, 69, 79);
+}
+.newTask{
+    float: right;
+}
+.newTask input{
+    position: relative;
+    top: 120px;
+    right: 220px;
+    padding: 5px;
+    font-size: 23px;
+    width: 400px;
+    border-radius: 5px;
+    color: rgb(33, 90, 103);
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(233, 233, 233);
+    box-shadow: 0px 0px 20px 0px rgb(16, 47, 53);
+}
+.newTask button{
+    position: relative;
+    top: 120px;
+    right: 200px;
+    padding: 5px;
+    font-size: 23px;
+    width: 70px;
+    border-radius: 5px;
+    color: rgb(33, 90, 103);
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(233, 233, 233);
+    box-shadow: 0px 0px 20px 0px rgb(16, 47, 53);
+}
+.newTask button:hover{
+    background-color: rgb(203, 202, 202);
+    border: 1px solid rgb(203, 202, 202);
+}
