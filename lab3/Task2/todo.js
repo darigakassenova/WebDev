@@ -9,7 +9,7 @@ document.querySelector('.add-tasks').onclick = function(){
   else{
      document.querySelector('.task-list').innerHTML += `
      <div class="task">
-        <button class="done" onclick = completed(this)><i class=check></i></button>
+        <button class="done" onclick = completed(this)></button>
         <span>
            ${document.querySelector('.input-tasks').value}
         </span> 
@@ -30,3 +30,13 @@ function deleting(){
         }
     }
 }
+function completed(click){
+   if(click.parentNode.querySelector('.done').style.backgroundColor == "white"){
+      click.parentNode.querySelector('.done').style.backgroundColor = "rgb(38, 102, 116)"
+      click.parentNode.querySelector('span').style.textDecoration = 'line-through';
+   }
+   else{
+     click.parentNode.querySelector('.done').style.backgroundColor = "white"
+      click.parentNode.querySelector('span').style.textDecoration = 'none';
+   }
+ }
