@@ -22,3 +22,11 @@ document.querySelector('.add-tasks').onclick = function(){
   }
 
 }
+function deleting(){
+  var delTask = document.querySelectorAll(".remove");
+    for(var i = 0; i < delTask.length; i++){
+        delTask[i].onclick = function(){
+            this.parentNode.remove();
+        }
+    }
+}
