@@ -11,14 +11,14 @@ body{
     top: 380px;
     left: 220px;
     padding: 5px;
-    background-color: rgb(36, 97, 111);
-    color :rgb(12, 49, 58);
+    background-color: rgb(250, 250, 250);
+    color:rgb(33, 90, 103);
     width: 150px;
     height: 25px;
     text-align: center;
     /* margin-left: 200px; */
     border-radius: 8px;
-    box-shadow: 0px 0px 20px 0px rgb(16, 47, 53);
+    box-shadow: 0px 0px 20px 0px #a9a8a8;
     font-size: 20px;
 }
 .heading #today{
@@ -43,7 +43,7 @@ body{
 .newTask{
     float: right;
 }
-.newTask input{
+.newTask input.input-tasks{
     position: relative;
     top: 120px;
     right: 208px;
@@ -56,12 +56,12 @@ body{
     background: white;
     box-shadow: 0px 0px 20px 0px rgb(16, 47, 53);
 }
-.newTask input:focus{
+.newTask input.input-tasks:focus{
     outline-color: #e8e8e8;
     background: white;
     box-shadow: 0px 0px 20px 0px #a9a8a8;
 }
-.newTask button{
+.newTask button.add-tasks{
     position: relative;
     top: 120px;
     right: 200px;
@@ -74,7 +74,7 @@ body{
     background: white;
     box-shadow: 0px 0px 20px 0px rgb(16, 47, 53);
 }
-.newTask button:hover{
+.newTask button.add-tasks:hover{
     color: white;
     background-color:rgb(33, 90, 103);
     box-shadow: 0px 0px 20px 0px #a9a8a8;
@@ -89,7 +89,53 @@ body{
     background: white;
     border-radius: 8px;
     box-shadow: 0px 0px 20px 0px rgb(16, 47, 53);
-   }
-   
-   
-   
+}
+.task-list{
+    position: relative;
+    float: right;
+    top: -120px;
+    right: -280px;
+ }
+.task{
+    display: flex;
+    flex-direction: row;
+    border: 3px solid rgb(38, 102, 116);
+    background-color:rgb(255, 255, 255);
+    width: 420px;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+ }
+.done{
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+    background-color: white;
+    border: 2px solid rgb(38, 102, 116);
+    border-radius: 4px;
+ }
+.task span{
+    font-size: 20px;
+    color:rgb(38, 102, 116);
+    border: none;
+    width: 93%;
+    text-align: left;
+    font-family: "Gill Sans", sans-serif;
+ }  
+.remove{
+    border: none;
+    text-align: right;
+    color: #e62222;
+    border: 1px solid #e62222;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+ }
+ .remove:hover{
+    color: #ffffff;
+    background-color: #e62222;
+    border-radius: 8px;
+ }
+ .task input:checked+.task span{
+    text-decoration: line-through;
+}
