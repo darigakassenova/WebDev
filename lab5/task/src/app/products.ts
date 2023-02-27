@@ -6,98 +6,230 @@ export interface Product {
   link: string;
   img: string;
   rating: number;
+  category: string;
+  numOfLikes: number;
 }
 
 export const products = [
   {
     id: 1,
-    name: 'Книга Уайльд О.: Портрет Дориана Грея',
-    price: 3.11,
-    description: '"Портрет Дориана Грея" - самое знаменитое произведение Оскара Уайльда, единственный его роман, вызвавший в свое время шквал негативных оценок и тем не менее имевший невероятный успех.',
-    link: 'https://kaspi.kz/shop/p/uail-d-o-portret-doriana-greja-100996924/?c=750000000#!/item',
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hea/hc0/33377873952798/uajld-o-portret-doriana-grea-100996924-1-Container.jpg',
-    rating: 9.5
+    name: 'Bamboo Palm',
+    price: 199,
+    description: 'With dense foliage and lush fronds, the Bamboo Palm makes a statement. An air-purifying plant adaptable to low light, this palm can reach heights of up to 8 feet tall in the right conditions.',
+    link: '',
+    img: 'https://bloomscape.com/wp-content/uploads/2020/08/bloomscape_bamboo-palm_stone-1-768x938.jpg?ver=279689',
+    rating: 9.5,
+    category:'Pet-Friendly Plants',
+    numOfLikes: 0
   },
   {
     id: 2,
-    name: 'Книга Коэльо П.: Алхимик',
-    price: 5.71,
-    description: 'Алхимик — самый известный роман бразильского писателя Пауло Коэльо, любимая книга миллионов людей во всем мире. В юности люди не боятся мечтать, все кажется им возможным. Но проходит время, и таинственная сила принимается им внушать, что их желания неосуществимы. Добиться воплощения Своей Судьбы — вот единственная подлинная обязанность человека... — утверждает Пауло Коэльо. Этот, ставший культовым, роман-притча способен изменить жизнь своих читателей.',
-    link:'https://kaspi.kz/shop/p/koel-o-p-alhimik-26018156/?c=750000000#!/item',
-    img:'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h71/h43/31576355897374/koel-o-p-alkhimik-26018156-1.jpg',
-    rating: 6.1
+    name: 'Bromeliad Guzmania Purple',
+    price: 79,
+    description: 'Featuring a striking purple bloom, the Bromeliad Purple is a beautiful flowering plant to add a touch of the tropics to your space. It is easy to care for with a unique way of watering. Keep the center of the plant, known as the “vase,” halfway filled with water and water the soil infrequently. Keep in indirect light and boost humidity around your plant by using a mister and your plant will thank you by producing pups in the future.',
+    link:'',
+    img:'https://bloomscape.com/wp-content/uploads/2023/01/BLOOMSCAPE_Purple_Bromeliad_2102-768x922.jpg?ver=997192',
+    rating: 8.1,
+    category:'Pet-Friendly Plants',
+    numOfLikes: 0
   },
   {
     id: 3,
-    name: 'Книга Кристи А.: Немой свидетель',
-    price: 3.71,
-    description: 'Когда леди Аранделл неожиданно упала с лестницы своего собственного дома, все вокруг увидели в этом лишь несчастливую случайность - ведь она наступила на резиновый мячик, оставленный там ее любимцем, фокстерьером по кличке Боб. Но чем больше думала об этом сама пострадавшая, тем больше ей казалось, что падение подстроил кто-то из ее родственников. Она написала письмо знаменитому детективу Эркюлю Пуаро с просьбой разобраться в этом деле. Но за то время, пока письмо шло до адресата, леди Аранделл уже умерла, а ее немаленькое наследство перешло к компаньонке. Пуаро не в силах воскресить несчастную леди, но он может найти убийцу. А поможет ему в этом тот самый пес по кличке Боб…',
-    link:'https://kaspi.kz/shop/p/kristi-a-nemoi-svidetel--26025053/?c=750000000#!/item',
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h04/h43/31836895084574/kristi-a-nemoj-svidetel-26025053-1-Container.jpg',
-    rating: 8.2
+    name: 'Bromeliad Collection',
+    price: 79,
+    description: 'The Bromeliad Collection has three playful bromeliads featuring stunningly impressive orange, maroon, and red flowers. With Bromeliad Guzmania Sky, Bromeliad Guzmania Lydia, and Bromeliad Vriesea Tosca, these easy-going bromeliads offer long-lasting, incandescent blooms that add a splash of color to any space. Each plant blooms once in its lifetime but will continue to grow “pups” that eventually will produce their own gorgeous flower.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2022/07/bloomscape_bromeliad-collection_white-768x922.jpg?ver=916000',
+    rating: 8.2,
+    category:'Pet-Friendly Plants',
+    numOfLikes: 0
   },
   {
     id: 4,
-    name: 'Книга Киз Д.: Цветы для Элджернона',
-    price: 5.08,
-    description: '«Цветы для Элджернона» Дэниела Киза входят в программу обязательного чтения в американских школах. Эта единственная история в жанре научной фантастики, автор которой был дважды награжден сначала за рассказ, а потом за роман с одним и тем же названием, героем, сюжетом. Тридцатитрехлетний Чарли Гордон – умственно отсталый. При этом у него есть работа, друзья и непреодолимое желание учиться. Эта фантастическая история обладает поразительной психологической силой и заставляет задуматься над общечеловеческими вопросами нравственности: имеем ли мы право ставить друг над другом эксперименты, к каким результатам это может привести и какую цену мы готовы заплатить за то, чтобы стать «самым умным». А одиноким? На вопросы, которые поднимали еще М. Булгаков в «Собачьем сердце» и Дж. Лондон в «Мартине Идене», Дэниел Киз дает свой однозначный ответ.',
-    link:'https://kaspi.kz/shop/p/kiz-d-tsvety-dlja-eldzhernona-100181228/?c=750000000#!/item',
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h09/ha5/32023453171742/kiz-d-cvety-dla-eldzernona-100181228-1-Container.jpg',
-    rating: 8.5
+    name: 'Money Tree Stump',
+    price: 99,
+    description: 'The Money Tree Stump is a perfect, low-care indoor foliage plant to give you a tropical feel with a touch of good fortune. With its stout trunk and bright green palm-like leaves, it looks both like a tree and a tiny palm. The Money Tree gets its name in part from the natural Feng Shui this plant gives. It’s believed this plant will bring positive energy and good luck to the owner. The Money Tree is perfect as a meaningful gift or your own good luck charm.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2022/06/bloomscape_money-tree-stump_lg_stone-768x922.jpg?ver=902507',
+    rating: 8.5,
+    category:'Pet-Friendly Plants',
+    numOfLikes: 0
   },
   {
     id: 5,
-    name: 'Книга Сунь-цзы: Искусство войны',
-    price: 3.03,
-    description: 'Тот, кто знает, когда можно сражаться, а когда нельзя, одержит победу.Тот, кто понимает, как использовать большие и малые силы, одержит победу.Тот, у кого верхи и низы горят одним и тем же желанием, одержит победу.Тот, кто, будучи полностью готов, ждет неподготовленного, одержит победу.Совсем не обязательно вести военные действия, чтобы использовать принципы, сформулированные Сунь-цзы. Они равно применимы в политике, управлении и даже в повседневной жизни. Победителем мечтает стать каждый. Постижение древней мудрости и сегодня – шаг к победе',
-    link:'https://kaspi.kz/shop/p/sun--tszy-iskusstvo-voiny-100579965/?c=750000000#!/item',
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hcf/h86/32988326723614/sun-czy-iskusstvo-vojny-100579965-1-Container.jpg',
-    rating: 7.3
+    name: 'Cat Palm',
+    price: 199,
+    description: 'The Cat Palm is sure to become a favorite thanks to its lush tropical appearance and dense green foliage. The Cat Palm’s fluffy leaves and short trunk give the feeling of a jungle oasis in your very own home. As one of our fullest plants, this palm is ready to make a statement. The Cat Palm is easy to care for and prefers indirect bright light.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2022/06/bloomscape_cat-palm_xxl_charcoal-768x922.jpg?ver=902621',
+    rating: 8.3,
+    category:'Pet-Friendly Plants',
+    numOfLikes: 0
   },
   {
     id: 6,
-    name: 'Книга Кристи А.: Убийство в Восточном экспрессе',
-    price: 4.72,
-    description: 'Находившийся в Стамбуле великий сыщик Эркюль Пуаро возвращается в Англию на знаменитом «Восточном экспрессе», в котором вместе с ним едут, кажется, представители всех возможных национальностей. Один из пассажиров, неприятный американец по фамилии Рэтчетт, предлагает Пуаро стать своим телохранителем, поскольку считает, что его должны убить. Знаменитый бельгиец отмахивается от этой абсурдной просьбы. А на следующий день американца находят мертвым в своем купе, причем двери закрыты, а окно открыто. Пуаро немедленно берется за расследование – и выясняет, что купе полно всевозможных улик, указывающих… практически на всех пассажиров «Восточного экспресса». Вдобавок поезд наглухо застревает в снежных заносах в безлюдном месте. Пуаро необходимо найти убийцу до того, как экспресс продолжит свой путь…',
-    link:'https://kaspi.kz/shop/p/kristi-a-ubiistvo-v-vostochnom-ekspresse-100015045/?c=750000000#!/item',
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h0d/hdd/31992848056350/kristi-a-ubijstvo-v-vostocnom-ekspresse-100015045-1-Container.jpg',
-    rating: 9.1
+    name: 'Jade Plant',
+    price: 39,
+    description: 'Jade Plants are one of the most beloved succulents. This easy to care for, long-lasting plant can be passed down for generations, becoming your own family heirloom. Keep in indirect to bright light and water only when the soil is completely dry. Keep this plant’s round leaves pest-free by dusting regularly.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2021/12/Bloomscape_Jade_small_charcoal_Angle2-scaled-e1640212012283-768x960.jpg?ver=639513',
+    rating: 9.1,
+    category: 'Low-Maintenance Plants',
+    numOfLikes: 0
   },
   {
     id: 7,
-    name: 'Книга Бeрнетт Ф. Э. Х.: Таинственный сад',
-    price: 4.26,
-    description: 'В центре романа "Таинственный сад" - десятилетняя Мери Леннокс, вернувшаяся из Индии в Англию после смерти родителей. В поместье ее дяди Арчибальда Крэвена Мери вынуждена привыкать к совершенно другой жизни, непохожей на ту, что была у нее до сих пор. Однажды девочка узнает о загадочном заброшенном саде, в который запрещено входить, и решает разыскать его. Вместе с новыми друзьями Мери предстоит проникнуть в тайны этого удивительного места, преображающего души людей.',
-    link:'https://kaspi.kz/shop/p/bernett-f-e-h-tainstvennyi-sad-101375607/?c=750000000#!/item',
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hff/hc6/34300229976094/bernett-f-e-h-tainstvennyj-sad-101375607-1.jpg',
-    rating: 8.3
+    name: 'Whale Fin Sansevieria',
+    price: 79,
+    description: 'Making a huge statement with just one leaf, the Whale Fin Sansevieria is quite the standout among houseplants. These Sansevierias do well with infrequent waterings and can tolerate low to indirect bright light. Dust regularly to deter pests and keep the unique dappled pattern looking its best.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2021/12/Bloomscape_SansevieriaMasoniana_medium_Charcoal-768x960.jpg?ver=640205',
+    rating: 8.3,
+    category: 'Low-Maintenance Plants',
+    numOfLikes: 0
   },
   {
     id: 8,
-    name: 'Книга Паланик Ч.: Бойцовский клуб',
-    price: 5.55,
-    description: '«Бойцовский клуб» — самый знаменитый роман Чака Паланика. Все помнят фильм режиссера Дэвида Финчера с Брэдом Питтом в главной роли? Он именно по этой книге. Это роман-вызов, роман, созданный всем назло и вопреки всему, в нем описывается поколение озлобившихся людей, потерявших представление о том, что можно и чего нельзя, где добро и зло, кто они сами и кто их окружает. Сам Паланик называет свой «Бойцовский клуб» новым «Великим Гэтсби». Какие же они — эти Гэтсби конца XX века?',
-    link:'https://kaspi.kz/shop/p/palanik-ch-boitsovskii-klub-104155644/?c=750000000#!/item',
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hb7/hdd/49416727691294/palanik-c-bojcovskij-klub-104155644-1.jpg',
-    rating: 9.3
+    name: 'Kangaroo Fern',
+    price: 79,
+    description: 'This lively and pet-friendly fern has unique deep green fronds. The Kangaroo Fern grows long fuzzy roots known as rhizomes; when in its natural habitat, this plant uses these roots to spread across the forest floor. Mist your fern often to mimic its natural humid environment.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2021/12/Bloomscape_KangarooFern_medium_Charcoal-768x960.jpg?ver=639598',
+    rating: 9.3,
+    category: 'Low-Maintenance Plants',
+    numOfLikes: 0
   },
   {
     id: 9,
-    name: 'Книга Джио С.: Ежевичная зима',
-    price: 4.45,
-    description: 'Сиэтл, 1933. Мать-одиночка Вера Рэй целует своего маленького сына Дэниела перед сном и уходит на ночную работу в местную гостиницу. Утром она обнаруживает, что город утопает в снегу, а ее сын исчез. Недалеко от дома, в сугробе, Вера находит любимого плюшевого медвежонка Дэниела, но больше никаких следов на заледеневшей дороге нет. Однако Вера не привыкла сдаваться, она сделает все, чтобы найти пропавшего ребенка! Сиэтл, 2010. Репортер Клэр Олдридж пишет очерк о парализовавшем город первомайском снежном буране. Оказывается, похожее ненастье уже было почти восемьдесят лет назад, и во время снегопада пропал мальчик. Клэр без энтузиазма берется за это дело, но вскоре обнаруживает, что история Веры Рэй переплетена с ее собственной судьбой самым неожиданным образом...',
-    link:'https://kaspi.kz/shop/p/dzhio-s-ezhevichnaja-zima-26025116/?c=750000000#!/item',
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h0b/hab/49748869218334/dzio-s-ezevicnaa-zima-26025116-1-Container.jpg',
-    rating: 3.2
+    name: 'Prickly Pear Cactus',
+    price: 69,
+    description: 'A playful cactus with pads shaped like a beavertail, the Prickly Pear Cactus is a low-maintenance plant with a no-fuss care routine with infrequent watering and fertilizing.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2020/08/bloomscape_prickly-pear-cactus_charcoal-e1625250902451-768x920.jpg?ver=279300',
+    rating: 8.2,
+    category: 'Low-Maintenance Plants',
+    numOfLikes: 0
   },
   {
     id: 10,
-    name: 'Книга Ремарк Э. М.: Триумфальная арка',
-    price: 6.39,
-    description: '«Триумфальная арка» – пронзительная история любви всему наперекор, любви, приносящей боль, но и дарующей бесконечную радость. Место действия – Париж накануне Второй мировой войны. Герой – беженец из Германии, без документов, скрывающийся и от французов, и от нацистов, хирург, спасающий человеческие жизни. Героиня – итальянская актриса, окруженная поклонниками, вспыльчивая, как все артисты, прекрасная и неотразимая. И время, когда влюбленным довелось встретиться, и город, пронизанный ощущением надвигающейся катастрофы, становятся героями этого романа. «Триумфальная арка» была дважды экранизирована и по-прежнему покоряет читателей всего мира.',
-    link:'https://kaspi.kz/shop/p/remark-e-m-triumfal-naja-arka-26025852/?c=750000000#!/item',
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h0d/h7d/31836880076830/remark-e-m-triumfalnaa-arka-26025852-1-Container.jpg',
-    rating: 9.4
+    name: 'Beginner Bundle',
+    price: 99,
+    description: 'Whether you’re just starting your plant parent journey or you want to help a loved one get started on theirs, the Beginner Bundle has you covered. Meet the easy-going Hedgehog Aloe and ZZ Plant. Both these plants’ thick foliage helps store water, so you don’t need to worry about missing a watering or two. In short, they are easy-care starter plants sure to help you grow your green thumb!',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2022/04/bloomscape_beginner-bundle_sm-md_charcoal_edited-768x922.jpg?ver=767991',
+    rating: 9.4,
+    category: 'Low-Maintenance Plants',
+    numOfLikes: 0
+  },
+  {
+    id: 11,
+    name: 'Hedgehog Aloe',
+    price: 39,
+    description: 'Delightful succulent with spiked blue-green leaves',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2022/01/bloomscape_hedgehog-aloe_sm_angle2-768x922.jpg?ver=660071',
+    rating: 9.4,
+    category: 'Cacti and Succulents',
+    numOfLikes: 0
+  },
+  {
+    id: 12,
+    name: 'Ponytail Palm',
+    price: 79,
+    description: 'Fun, distinct, and hardy. This plant is low-maintenance and adaptable.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2020/08/bloomscape_ponytail-palm_charcoal-e1625250313933.jpg?ver=279293',
+    rating: 9.4,
+    category: 'Cacti and Succulents',
+    numOfLikes: 0
+  },
+  {
+    id: 13,
+    name: 'Ponytail Palm Tree',
+    price: 149,
+    description: 'A spirited desert-dweller popular for its low-maintenance care, the Ponytail Palm Tree is a larger, more full version of our beloved Ponytail Palm. With its bulb-like trunk and lively, thin leaves that spiral outwards, the Ponytail Palm Tree is a hardy succulent that adds exceptional character to any space.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2020/04/bloomscape_ponytail-palm-tree_v2_large_indigo-768x922.jpeg?ver=581665',
+    rating: 9.4,
+    category: 'Cacti and Succulents',
+    numOfLikes: 0
+  },
+  {
+    id: 14,
+    name: 'Tough Stuff Collection',
+    price: 79,
+    description: 'Three easy and adaptable plants, including a Sansevieria, ZZ Plant, and Hoya variety',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2022/07/bloomscape_tough-stuff-collection_taupe-768x922.jpg?ver=916047',
+    rating: 9.4,
+    category: 'Cacti and Succulents',
+    numOfLikes: 0
+  },
+  {
+    id: 15,
+    name: 'Hedgehog Aloe',
+    price: 39,
+    description: 'Delightful succulent with spiked blue-green leaves',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2022/01/bloomscape_hedgehog-aloe_sm_angle2-768x922.jpg?ver=660071',
+    rating: 9.4,
+    category: 'Cacti and Succulents',
+    numOfLikes: 0
+  },
+  {
+    id: 16,
+    name: 'Rattan Tray',
+    price: 69,
+    description: 'Gracefully accent your plants with this natural Rattan Tray. This tray makes it easy to create a gorgeous display of foliage on your coffee table, kitchen island, or dresser. Simply add an array of plants and decor, and your guests will be drawn to the delicate dimension it adds to your space. This tray fits either three small plants, three extra smalls, or one small and one medium plant.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2022/06/bloomscape_rattan-tray_5-768x922.jpg?ver=902666',
+    rating: 9.4,
+    category: 'Gift Shop',
+    numOfLikes: 0
+  },
+  {
+    id: 17,
+    name: 'Bromeliad Aechmea Pink',
+    price: 79,
+    description: 'Featuring colorful, long-lasting blooms, the Bromeliad Aechmea Pink is a unique flowering plant to add a touch of the tropics to your space. With blooms that last for up to six months, these are sure to brighten any home.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2020/08/bloomscape_bromeliad-aechmea-pink_slate-e1625249957301-768x921.jpg?ver=279188',
+    rating: 9.4,
+    category: 'Gift Shop',
+    numOfLikes: 0
+  },
+  {
+    id: 18,
+    name: 'Tradescantia Nanouk',
+    price: 79,
+    description: 'This easy to care for Tradescantia Nanouk boasts delicate creamy green, purple, pink, and white leaves and is the perfect gift for any plant lover. This plant will tolerate lower light, although indirect light will help keep its colors vibrant. This vining plant is perfect for hanging pots and is easily propagated to share with a loved one.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2022/01/Bloomscape_TradescantiaNanouk_Medium_Indigo-768x960.jpg?ver=651500',
+    rating: 9.4,
+    category: 'Gift Shop',
+    numOfLikes: 0
+  },
+  {
+    id: 19,
+    name: 'Round Trellis',
+    price: 29,
+    description: 'Put the luscious leaves of your trailing plant on display with this dazzling handmade Round Trellis. From monsteras to hoyas, pothos, and more, turn your plant into a show-stopper with this 12” copper wire trellis. Shorter plants can be trained as they grow, but longer plants can simply be wrapped around the wire right away. This makes for a great gift for any plant enthusiast in your life.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2022/06/bloomscape_round-trellis_3-768x922.jpg?ver=902686',
+    rating: 9.4,
+    category: 'Gift Shop',
+    numOfLikes: 0
+  },
+  {
+    id: 20,
+    name: 'Bromeliad Guzmania Yellow',
+    price: 39,
+    description: 'The Bromeliad Yellow provides an eye-catching and vibrant splash of color in your home. Easy to care for, this plant requires unique watering. Keep the center of the plant, known as the “vase,” halfway filled with water and water the soil infrequently. Keep in indirect light and boost humidity around your plant by using a mister and your plant will thank you by producing pups in the future.',
+    link:'',
+    img: 'https://bloomscape.com/wp-content/uploads/2022/08/bloomscape_yellow-bromeliad_sm_angle2-768x921.jpg?ver=927247',
+    rating: 9.4,
+    category: 'Gift Shop',
+    numOfLikes: 0
   }
 ];
 

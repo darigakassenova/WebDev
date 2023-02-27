@@ -1,4 +1,4 @@
-<h1 class="categories">Categories</h1>
+<h1 class="categories">Find Your <span>Perfect</span> Plant</h1>
 
 <div *ngFor="let category of categories" class="category">
     <fieldset>
@@ -7,12 +7,12 @@
             [title]="category.name"
             [routerLink]="['/category', category.id]"
         >
-            {{ category.name }}
+            {{ category.name}}
         </a>
         </h3>
     
         <div class="category-list-img">
-        <img src="{{ category.img }}" class=".img" width="180" />
+        <img src="{{ category.img }}" class=".img" width="280" />
         </div>
     </fieldset>
   </div>

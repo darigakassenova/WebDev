@@ -20,7 +20,7 @@ import { ProductCategoriesComponent } from './product-categories/product-categor
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductCategoriesComponent},
-      // { path: '', component: ProductListComponent },
+      { path: 'category/:products', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },

@@ -6,22 +6,22 @@ export interface Category {
   export const categories = [
     {
       id: 1,
-      name: 'Books',
-      img: 'https://simg.marwin.kz/media/books/hud-class-min.png'
+      name: 'Pet-Friendly Plants',
+      img: 'https://bloomscape.com/wp-content/uploads/2021/07/11_15_18_Bloomscape_221_1185x1582.jpg?ver=556506'
     },
     {
         id: 2,
-        name: 'Notebooks',
-        img: 'https://simg.marwin.kz/media/catalog/product/2/5/bloknot_a5_135h213_96_l_7b_joy_book_nochnoe_nebo.jpg'
+        name: 'Low-Maintenance Plants',
+        img: 'https://bloomscape.com/wp-content/uploads/2021/10/20200923_Bloomscape_Trish__0046_1185%E2%80%8A%C3%97%E2%80%8A1582.jpg?ver=612704'
       },
     {
         id: 3,
-        name: 'Sweets',
-        img: 'https://simg.marwin.kz/media/catalog/product/1/2/marmelad_jevatelnyy_fini_kola_butylochka_v_sahare90gr_ispaniya.jpg'
+        name: 'Cacti and Succulents',
+        img: 'https://bloomscape.com/wp-content/uploads/2022/07/bloomscape_cacti-succulent-group1-hptile.jpeg?ver=915376'
       },
     {
         id: 4,
-        name: 'Toys',
-        img: 'https://freepngimg.com/thumb/categories/2432.png'
+        name: 'Gift Shop',
+        img: 'https://bloomscape.com/wp-content/uploads/2021/11/bloomscape_gifts-75-150_group_vertical_1185x1582.jpg?ver=615127'
       },
     ]
