@@ -1,0 +1,18 @@
+<h1 class="categories">Categories</h1>
+
+<div *ngFor="let category of categories" class="category">
+    <fieldset>
+        <h3>
+        <a
+            [title]="category.name"
+            [routerLink]="['/category', category.id]"
+        >
+            {{ category.name }}
+        </a>
+        </h3>
+    
+        <div class="category-list-img">
+        <img src="{{ category.img }}" class=".img" width="180" />
+        </div>
+    </fieldset>
+  </div>

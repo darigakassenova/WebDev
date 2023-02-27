@@ -1,0 +1,10 @@
+.category{
+    position: relative;
+    align-items: center;
+    top: 150px;
+    display: inline-block;
+    margin-left: 110px;
+    height: 50px;
+    border-radius: 10px;
+    /* width: 400px; */
+}
