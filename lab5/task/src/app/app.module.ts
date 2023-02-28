@@ -10,7 +10,6 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ShippingComponent } from './shipping/shipping.component';
 import { ProductCategoriesComponent } from './product-categories/product-categories.component';
 
 @NgModule({
@@ -20,10 +19,9 @@ import { ProductCategoriesComponent } from './product-categories/product-categor
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductCategoriesComponent},
-      { path: 'category/:products', component: ProductListComponent },
+      { path: 'category/:categoryName', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent },
+      { path: 'cart', component: CartComponent }
     ])
   ],
   declarations: [
@@ -33,7 +31,6 @@ import { ProductCategoriesComponent } from './product-categories/product-categor
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent,
     ProductCategoriesComponent
   ],
   bootstrap: [
