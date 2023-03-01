@@ -30,15 +30,8 @@
     >
       <button>Share on Telegram</button>
     </a>
-    <a
-      target="_blank"
-      style="position: relative;left: 3vw;"
-      href="https://web.whatsapp.com://send?text={{
-        product.link
-      }}&text={Share by Whatsapp}"
-    >
-      <button>Share on Whatsapp</button>
-    </a>
+    <button class="delete" (click)="removeProduct(product.id)">remove</button>
+    <button class="like" (click)="likedProducts(product)">like {{product.numOfLikes}}</button>
     </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.

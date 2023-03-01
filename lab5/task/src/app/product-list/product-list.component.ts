@@ -18,9 +18,15 @@ export class ProductListComponent implements OnInit {
   ) {
   }
   products = [...products]
+
+  likedProducts(item : Product){
+    item.numOfLikes++
+    console.log(item.numOfLikes)
+  }
   removeProduct(ind : number){
     // @ts-ignore
-    this.category.items = this.category.items.filter((x) => x.id !== ind);
+    this.products = this.products.filter((x) => x.id !== ind);
+
   }
   ngOnInit() {
     const routeParams = this.activRoute.snapshot.paramMap;
