@@ -128,3 +128,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+lab4/.angular/
+lab5/.angular/
+lab6/.angular/
