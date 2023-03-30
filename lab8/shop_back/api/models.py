@@ -12,11 +12,20 @@ class Product(models.Model):
         return {
             'id': self.id,
             'name': self.name,
-            'price': self.price
+            'price': self.price,
+            'description': self.description,
+            'count': self.count,
+            'is_active': self.is_active,
         }
 
 class Category(models.Model):
     name = models.CharField(max_length=255)
-    price = models.FloatField(default=1000)
+    product_id = models.IntegerField()
+    def to_json(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'product_id': self.product_id
+        }
 
     
