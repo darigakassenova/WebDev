@@ -28,12 +28,8 @@ def category_details(request, category_id):
     return JsonResponse({'error': 'Category not found'})
 
 def category_products(request, category_id):
-    for c in categories:
-        if c.to_json()['id'] == category_id:
-            category = c
-            break
     product_list = []
     for p in products:
-        if p.to_json()['id'] == category.product_id:
+        if p.category_id == category_id:
             product_list.append(p.to_json())
     return JsonResponse(product_list, safe=False)
