@@ -21,7 +21,7 @@ class Vacancy(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     salary = models.FloatField()
-    company = models.ForeignKey(Company,on_delete=models.CASCADE,default = 0)
+    company = models.ForeignKey(Company,on_delete=models.CASCADE)
 
     def to_json(self):
         return {
